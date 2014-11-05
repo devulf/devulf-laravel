@@ -11,4 +11,7 @@
 |
 */
 
-Route::get('/', array('before' => 'guest', 'as' => 'home', 'uses'=>'HomeController@getIndex'));
+Route::get('/', function () {
+        
+        return View::make('home/index');
+    }));
