@@ -11,4 +11,4 @@
 |
 */
 
-Route::get('home', array('before' => 'guest', 'as' => 'home', 'uses'=>'HomeController@getIndex'));
+Route::get('/', array('before' => 'guest', 'as' => 'home', 'uses'=>'HomeController@getIndex'));
